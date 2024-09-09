@@ -17,6 +17,13 @@ Design Reference:
 
 ## Setting Up Instructions
 
+1. Sign in/Sign up for a Github Account
+2. Fork this repo into your account
+3. Click on '<> Code' and click on the tab 'Codespaces'
+4. Click on 'Create codespace ...'
+5. You will see an IDE opening up. Once set up, run 'npm i' on the terminal and install all the dependencies associated with this demo project
+6. Now wait for further instructions...
+
 ## Available Scripts
 
 In the project directory, you can run:
