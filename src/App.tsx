@@ -2,6 +2,7 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import EmailIcon from '@mui/icons-material/Email';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
 import Divider from '@mui/material/Divider';
 import FormControl from '@mui/material/FormControl';
@@ -14,7 +15,6 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import { useState } from 'react';
 import './App.css';
 import { ReactComponent as LoginSvg } from './assets/images/login.svg';
-import MyButton from './components/Button/MyButton';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         </div>
         <div className='login-wrapper'>
           {/* Login Page Text and Subtext */}
-          <h1 className='login-signin-txt'>Sign in to your account</h1>
+          <h1 className='login-signin-txt'>Sign in</h1>
           <div className='login-sub-txt mb-8'>
             Enter your details to proceed further
           </div>
@@ -109,7 +109,7 @@ function App() {
                 </Link>
               </div>
             </FormControl>
-            <MyButton fullwidth>Continue</MyButton>
+            <Button variant='contained'>Continue</Button>
           </div>
         </div>
         {/* Alternate Login Options */}
@@ -117,15 +117,7 @@ function App() {
           <Divider variant='middle'>or</Divider>
         </div>
         <div className='login-input-container flex flex-col gap-2 mt-6'>
-          <MyButton fullwidth variant='outlined'>
-            Continue with Google
-          </MyButton>
-          <MyButton fullwidth variant='outlined'>
-            Continue with Facebook
-          </MyButton>
-          <MyButton fullwidth variant='outlined'>
-            Continue with Apple
-          </MyButton>
+          {/* Place your code for the additional buttons here */}
         </div>
         <div className='login-svg'>
           <LoginSvg />
